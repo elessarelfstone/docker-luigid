@@ -5,7 +5,7 @@
 
 FROM python:alpine
 
-MAINTAINER  Tim Birkett <tim@birkett-bros.com> (@pysysops)
+MAINTAINER  Horace Williams <horace@worace.works> (@worace)
 
 ARG user=app
 ARG group=app
