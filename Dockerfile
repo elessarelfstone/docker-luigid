@@ -18,7 +18,8 @@ ARG gid=2101
 RUN addgroup -g ${gid} ${group} \
     && adduser -u ${uid} -G ${group} -D -s /bin/bash ${user}
 
-RUN pip install sqlalchemy luigi
+RUN pip install sqlalchemy
+RUN pip install 'luigi==2.7.5'
 
 RUN mkdir /etc/luigi
 ADD ./etc/luigi/logging.cfg /etc/luigi/
